@@ -37,13 +37,13 @@ X = X.astype('float32')
 X = X / 255.0
 
 
-
+#結果の出力
 for w in range(len(files)):
 
     result = model.predict([X])[w]
     predicted = result.argmax()
     percentage = int(result[predicted] * 100)
-    print(files[w].strip(dir))
+    print(files[w])
     print("{0}({1} %)".format(classes[predicted],percentage))
     
 
