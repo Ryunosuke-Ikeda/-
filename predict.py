@@ -6,9 +6,7 @@ import glob
 
 #####  mike=0,siro=1  ######
 
-#model_path = "logdir/model_file.hdf5"
-#model_path = "/Users/ryunosuke/Desktop/python/original_aug/logdir/model_file.hdf5"
-#images_folder = "/Users/ryunosuke/Desktop/python/original_aug/sample_images"
+
 
 model_path = "./logdir/model_file.hdf5"
 images_folder = "./test_img"
@@ -22,8 +20,7 @@ model = load_model(model_path)
 image_size=128
 X = []
 
-#dir = "/Users/ryunosuke/Desktop/python/original_aug/sample_images"
-#dir = "./sample_image"
+
 dir = images_folder
 #パスの確認
 #print(dir)
@@ -67,6 +64,5 @@ print(result2)
 '''
 
 
-#test
-#print(model.predict_classes(X))
+
 
