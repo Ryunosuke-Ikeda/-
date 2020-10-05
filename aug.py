@@ -26,7 +26,7 @@ for index, classlabel in enumerate(classes):
         image = Image.open(file)
         image = image.convert("RGB")
         image = image.resize((image_size, image_size))
-        image.save("./test/{}{}.jpg".format(classlabel,i))
+        #image.save("./test/{}{}.jpg".format(classlabel,i))
         data = np.asarray(image)
         
         for angle in range(-20, 20, 5):##5
