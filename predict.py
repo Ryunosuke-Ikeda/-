@@ -53,15 +53,6 @@ for w in range(len(files)):
     print("{0}({1} %)".format(classes[predicted],percentage))
 
 
-'''
-#各値を返す。（並び変えてる）
-result = model.predict([X])[0]
-#predicted = result.argmax()
-#percentage = int(result[predicted] * 100)
-result2=[result[0],result[3],result[2],result[1]]
-print(result2)
-
-'''
 
 
 
