@@ -23,7 +23,7 @@ from keras.callbacks import TensorBoard,ModelCheckpoint
 hp1 = {}
 hp1['class_num'] = 2 # クラス数
 hp1['batch_size'] = 64 # バッチサイズ #####32
-hp1['epoch'] = 1 #エポック数
+hp1['epoch'] = 10 #エポック数
 
 
 
@@ -104,7 +104,7 @@ history = model.fit(
 
 
 loss,accuracy = model.evaluate(X_test, y_test, batch_size=hp1['batch_size'])
-
+'''
 # 損失の履歴をプロット
 plt.plot(history.history['loss'])
 plt.plot(history.history['val_loss'])
@@ -128,7 +128,7 @@ plt.ylabel('accuracy')
 plt.legend(['model1 acc', 'model1 val_acc'], loc='lower right')
 plt.show()
 
-
+'''
 
 print('loss=',loss,'accuracy=',accuracy)
 
